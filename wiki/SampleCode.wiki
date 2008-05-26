@@ -1,0 +1,30 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Here is a simple sample of code using H2Sharp
+
+= Code=
+
+{{{
+using System;
+using System.Data.H2;
+
+namespace H2SharpExample
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            using (H2Connection connection = new H2Connection("jdbc:h2:~/test", "sa", ""))
+            {
+                using (H2Command command = connection.CreateCommand())
+                {
+                    command.CommandText = "Select 'hello world'";
+                    Console.WriteLine(command.ExecuteScalar());
+                }
+            }
+        }
+    }
+}
+}}}
