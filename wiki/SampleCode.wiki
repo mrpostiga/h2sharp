@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary A simple sample on how to use H2Sharp
 #labels Featured
 
 = Introduction =
