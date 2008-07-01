@@ -19,6 +19,7 @@ namespace H2SharpExample
         {
             using (H2Connection connection = new H2Connection("jdbc:h2:~/test", "sa", ""))
             {
+                connection.Open();
                 using (H2Command command = connection.CreateCommand())
                 {
                     command.CommandText = "Select 'hello world'";
