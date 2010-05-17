@@ -1,0 +1,11 @@
+#summary How to compile H2Sharp
+
+H2Sharp can be built on all the platforms supported by MonoDevelop.
+
+However so far it seems to work well only on Microsoft .NET (hence, on Windows).
+
+  * On Unix / MacOS X : Install [http://www.mono-project.com/Main_Page Mono] and [http://monodevelop.com/ MonoDevelop]
+  * On Windows : Install the free [http://msdn.microsoft.com/fr-fr/express/aa975050.aspx Visual C# 2008 Express Edition] (not tested yet with [http://www.microsoft.com/express/ 2010])
+  * Install [http://www.ikvm.net/ IKVM.NET] and set the IKVM_HOME environment variable to its main directory (should have a 'bin' sub-directory)
+  * [http://code.google.com/p/h2sharp/source/checkout Checkout H2Sharp]
+  * Open h2sharp/H2Sharp/H2Sharp.sln with MonoDevelop or Visual C++ and build
