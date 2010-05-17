@@ -19,7 +19,7 @@ However so far it seems to work well only on Microsoft .NET (hence, on Windows).
 
 = Updating to a newer version of H2 =
 
-  * Delete h2sharp/H2Sharp/Dlls/*.jar
+  * Delete `h2sharp/H2Sharp/Dlls/*.jar`
   * Optional: put the version of h2.jar you want in the Dlls directory
-  * Run the script h2sharp/H2Sharp/CreateH2Dll.sh : it will download the latest h2 JAR and convert all JARs in Dlls to DLL files
+  * Run the script `h2sharp/H2Sharp/CreateH2Dll.sh` : it will download the latest h2 JAR and convert all JARs in Dlls to DLL files
   * In Visual C++ or MonoDevelop, update the references to h2-xxx.dll in all the projects so that they point the newly generated h2-yyy.dll
